@@ -1,0 +1,72 @@
+body {
+    background-color: rgb(71, 67, 67);
+    height: 98vh;
+
+}
+
+main {
+    display: grid;
+    height: 100%; 
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(6, 1fr); 
+    
+}
+
+header {
+    color: white;
+    padding: 40px;
+    text-align: center;
+    font-family: "Sonsie One"
+}
+
+.box {
+    height: 100%;
+    display: grid;
+    grid-column: span 1;
+    grid-row: span 1;
+    grid-gap: 5px;
+
+
+}
+
+.one {
+    grid-column: span 2;
+    justify-content: center;
+
+}
+
+.medium {
+    display: none;
+}
+
+img {
+    height: 100px;
+    border-radius: 15px;
+}
+
+@media only screen and (min-width: 600px) {
+
+header {
+    text-align: left;
+    margin-left: 20px; 
+}
+main {
+    display: grid;
+    height: 100%;
+    grid-template-columns: repeat(11, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-gap: 5px;
+}
+
+.box {
+    height: 100%; 
+    display: grid; 
+    grid-column: span 2;
+} 
+
+img {
+    height: 125px;
+}
+
+
+}
